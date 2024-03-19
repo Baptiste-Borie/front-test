@@ -1,0 +1,37 @@
+.BoxPerson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border-radius: 15px;
+    height: 20vmin;
+    
+    
+}
+
+.BoxPerson:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px#888888;
+}
+
+.toggleMode{
+    position : absolute;
+    top : 3%;
+    right : 2%;
+
+}
+
+.toggleTransi {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); 
+    }
+  }
