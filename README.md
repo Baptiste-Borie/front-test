@@ -15,5 +15,12 @@
 - Afficher la moyenne d'âge de toutes les personnes en haut de la page
 
 - Choses que je veux voir absolument dans le code :
-    - un Context (https://reactjs.org/docs/context.html) (tips: ça implique de découper ton code en plusieurs fichiers/composants) 
-    - un peu de typage avec Typescript
+
+  - un Context (https://reactjs.org/docs/context.html) (tips: ça implique de découper ton code en plusieurs fichiers/composants)
+  - un peu de typage avec Typescript
+
+  ### Debrief de mon ressenti
+
+  A première vu les taches demandés me semblait toutes plus ou moins abordable. Après avoir pull le projet j'ai direct fait face à ma première difficulte typescript. Je ne conaissais pas du tout mais avec un peu de recherche et conaissant d'autres language typé j'ai réussi à m'adapter.
+
+  Une fois que ca compiler j'ai pris plus ample conaissance de l'architecture 2 choses m'ont "choqués" directement. La première est qu'il n'y a pas de architecure à proprement parler une fois dans le src les choses sont justes la. Seconde chose le fichier "App" est bien trop chargé, notamment avec du code répété. J'ai donc débuté par le plus simple : tout ranger dans des sous-dossier, déplacer le tableau de gens dans un fichier à part (ce qui fut une occasion de découvrir le principe d'interface en typescript), réaliser mon premier composant "BoxPerson" et afficher la moyenne d'age car c'était le plus simple.

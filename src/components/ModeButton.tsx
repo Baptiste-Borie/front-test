@@ -3,7 +3,7 @@ import "../style/components.css";
 import { useModeContext } from "../Context/context";
 import clair from "../assets/clair.svg";
 import sombre from "../assets/sombre.svg";
-import {Button, Box} from "@chakra-ui/react";
+import {Box} from "@chakra-ui/react";
 
 export const ModeButton = () => {
     const { mode, setMode } = useModeContext();
