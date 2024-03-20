@@ -21,11 +21,11 @@
 
   ### Debrief de mon ressenti
 
-  Je vais expliquer ce que j'ai pensé/ressenti/ comme j'ai aborder chaque aspect. Je précise que j'ai commenter le code à certain endroit pour expliciter le fonctionnement de certaines parties.
+Je vais expliquer ce que j'ai pensé/ressenti/ comme j'ai aborder chaque aspect. Je précise que j'ai commenter le code à certain endroit pour expliciter le fonctionnement de certaines parties.
 
-  A première vu les taches demandés me semblait toutes plus ou moins abordable. Après avoir pull le projet j'ai direct fait face à ma première difficulte typescript. Je ne conaissais pas du tout mais avec un peu de recherche et conaissant d'autres language typé j'ai réussi à m'adapter.
+A première vu les taches demandés me semblait toutes plus ou moins abordable. Après avoir pull le projet j'ai direct fait face à ma première difficulte typescript. Je ne conaissais pas du tout mais avec un peu de recherche et conaissant d'autres language typé j'ai réussi à m'adapter.
 
-  Une fois que ca compiler j'ai pris plus ample conaissance de l'architecture 2 choses m'ont "choqués" directement. La première est qu'il n'y a pas de architecure à proprement parler une fois dans le src les choses sont justes la. Seconde chose le fichier "App" est bien trop chargé, notamment avec du code répété. J'ai donc débuté par le plus simple : tout ranger dans des sous-dossier, déplacer le tableau de gens dans un fichier à part (ce qui fut une occasion de découvrir le principe d'interface en typescript), réaliser mon premier composant "BoxPerson" et afficher la moyenne d'age car c'était le plus simple.
+Une fois que ca compiler j'ai pris plus ample conaissance de l'architecture 2 choses m'ont "choqués" directement. La première est qu'il n'y a pas de architecure à proprement parler une fois dans le src les choses sont justes la. Seconde chose le fichier "App" est bien trop chargé, notamment avec du code répété. J'ai donc débuté par le plus simple : tout ranger dans des sous-dossier, déplacer le tableau de gens dans un fichier à part (ce qui fut une occasion de découvrir le principe d'interface en typescript), réaliser mon premier composant "BoxPerson" et afficher la moyenne d'age car c'était le plus simple.
 
 J'ai gérer l'affichage du profil en mettant la fonction displayProfile en paramêtre, avec le recul peut être qu'un contexte ou une autre manière de faire aurait était plus adapté. J'ai aussi réaliser le changement du document title au même moment, je ne me rappelais pas quand dans le README vous aviez donné en tips useEffect donc je ne suis pas partie dans cette optique, mais cela fonctionne très bien. Etant donné que j'avais rendu dynamique l'affichage des personnes à l'aide de ma fonction renderCardPeople et de mon composant.
 
