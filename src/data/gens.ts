@@ -4,9 +4,9 @@ export interface Person {
     age: string;
     description: string;
     hasBeenManager?: boolean; // "?" permet que cet attribut soit optionnel
-  }
+}
 
-// Pour les ages je me suis basé sur le site https://theoffice.fandom.com/wiki/Main_Page. J'ai pris la libérté d'enlever 10 ans a chaque personnage vu que la dernière saison de la série date de 2012. Le but étant de donné un age cohérent pour chaque personnage .
+// Pour les ages je me suis basé sur le site https://theoffice.fandom.com/wiki/Main_Page. J'ai pris la liberté d'enlever 10 ans a chaque personnage vu que la dernière saison de la série date de 2012. Le but étant de donné un age cohérent pour chaque personnage .
 export const gens: Person[] = [
     {
         name: "Jim Halpert",

@@ -20,10 +20,10 @@ function App() {
     // métode qui retoune tous les personnes qui ont était manager chez Dunder&Mifflin. 
     const returnManager= (): JSX.Element[]=> {
         const  gensFiltered :JSX.Element[]= [];
-        let acc = 0;
+        let acc = 0; //acc nécessaire car quand on rajoute un élément on doit lui donner un id unique.
         const managers = gens.filter((person: Person) => person.hasBeenManager === true);
         managers.forEach((manager: Person) => {
-            gensFiltered.push(<p key={acc}>{manager.name}</p>);
+            gensFiltered.push(<p key={acc}>{manager.name}</p>); 
             acc++;
     });
 
@@ -45,7 +45,6 @@ function App() {
 
     // Trier le tableau gens par l'age avec sa propre méthode de comparasion selon mozilla doc on array sort
     const compareByAgeCroissant = (a: Person, b: Person) => {
-        
         if (parseInt(a.age) < parseInt(b.age)) {
             return -1;
         }
@@ -91,21 +90,20 @@ function App() {
         console.log(firstName);
         // J'aurais pu utiliser les fonction asynchrones avec des fetch, await ... mais j'avais un souvenir plus précis des requetes xhr
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', `https://api.genderize.io/?name=${firstName} `, false); // false indique une requête synchrone
+        xhr.open('GET', `https://api.genderize.io/?name=${firstName} `, false); // false indique une requête asynchrone
         xhr.send();
 
         if (xhr.status === 200) {
             const data = JSON.parse(xhr.responseText);
             console.log(data)
-            return data.gender || 'Inconnu / Erreur API'; // Si gender n'est pas défini, retourne 'Unknown'
+            return data.gender || 'Inconnu / Erreur API'; // Si gender n'est pas défini, retourne 'Inconnu/ Erreur API'
         } else {
             console.error('Erreur data:', xhr.statusText);
-            return 'Erreur API (Probablement limite de requête/jour atteinte)'; // En cas d'erreur, retourne 'Unknown'
+            return 'Erreur API (Probablement limite de requête/jour atteinte)';
         }
     }
     
         return (
-        
             <Box className={mode === 'clair' ? "App" : "AppSombre"}>
                 <header className="App-header">
                 <img src={logo} alt="logoAlt"  className="App-logo"/>
@@ -136,7 +134,6 @@ function App() {
                 {renderCardPeople(ordreListe)}
                 </Grid>
             </Box>
-        
     );
 }
 
